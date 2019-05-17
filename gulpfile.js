@@ -8,7 +8,9 @@ var preFixer = require('gulp-autoprefixer');
 var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
 var sourceNaps = require('gulp-sourcemaps');
-var rigger = require('gulp-rigger');
+// var rigger = require('gulp-rigger');
+// var plumber = require('gulp-plumber');
+var fileInclude = require('gulp-file-include');
 var cssMin = require('gulp-minify-css');
 var browserSync = require('browser-sync');
 var rimraf=require('rimraf');
@@ -46,14 +48,19 @@ gulp.task("webserver", function () {
 
 gulp.task('html:build', function () {
     gulp.src(path.src.html)
-        .pipe(rigger())
+        // .pipe(plumber())
+        .pipe(fileInclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
         .pipe(gulp.dest(path.build.html))
         .pipe(reload({stream: true}));
 });
 
 gulp.task('js:build', function () {
     gulp.src(path.src.js)
-        .pipe(rigger())
+        // .pipe(plumber())
+        
         // .pipe(sourceNaps.init())
         .pipe(uglify())
         // .pipe(sourceNaps.write())
