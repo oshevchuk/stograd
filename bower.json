@@ -1,0 +1,21 @@
+{
+  "name": "frontendbuilder",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Oshevchuk <megadevice83@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*"
+  }
+}
