@@ -1,6 +1,51 @@
+@-ms-viewport{
+  width: device-width;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html{
+  -webkit-text-size-adjust: 100%;  
+}
+
 body{
-  color: red;
-  div{
-    font-family: 33px;
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid{
+  width: 100%;
+}
+
+.row{
+  display: flex;
+  width: 100%;
+}
+
+
+@media(min-width: 576px) {
+  .container {
+    max-width: 540px;
   }
 }
+
+@media(min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media(min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
