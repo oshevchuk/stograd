@@ -8,6 +8,7 @@
   font: {
     size: 20px;
   }
+  font-family: 'Montserrat', sans-serif;
 }
 
 html{
@@ -17,6 +18,7 @@ html{
 body{
   padding: 0;
   margin: 0;
+  color: black;
 }
 
 .container-fluid{
@@ -28,6 +30,30 @@ body{
   width: 100%;
 }
 
+h1{
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 96px;
+  margin: 66px 0;
+}
+
+h2{
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  margin: 46px 0;
+}
+
+h3{
+  font-size: 40px;
+  line-height: 32px;
+  margin: 40px 0;
+}
+
+h4{
+  font-size: 28px;
+  line-height: 34px;
+}
 
 @media(min-width: 576px) {
   .container {
@@ -53,4 +79,8 @@ body{
   }
 }
 
-@import "./partials/header";
+.left-col{
+  width: 240px;
+}
+
+@import "partials/header.scss";
