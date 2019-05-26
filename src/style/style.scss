@@ -4,6 +4,10 @@
 
 * {
   box-sizing: border-box;
+
+  font: {
+    size: 20px;
+  }
 }
 
 html{
@@ -49,3 +53,4 @@ body{
   }
 }
 
+@import "./partials/header";
