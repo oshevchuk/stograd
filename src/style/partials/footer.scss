@@ -1,0 +1,59 @@
+.footer{
+    background-color: white;
+    width: 100%;
+    border-top: 1px solid #E9E9E9;
+
+    .container-fluid{
+        .container{
+            min-height: 176px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 43px 0;
+            
+            * {
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            .social{
+                li{
+                    margin-left: 24px;
+                    display: flex;
+                    align-items: center;
+
+                    a{
+                        display: flex;
+                        align-items: center;
+
+                        img{
+                            padding-right: 8px;
+                            display: block;
+                            // width: 12px;
+                        }
+                    }
+                }
+            }
+            .contact{
+                li {
+                    margin-right: 56px;
+                }
+            }
+            div.row{
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+
+                    li{
+                        a{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

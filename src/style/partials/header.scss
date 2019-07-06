@@ -1,12 +1,63 @@
-.header{
-  
+.header{  
     width: 100%;
-    min-height: 80px;
+    min-height: 64px;
     background-color: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
-    a{
-        text-decoration: none;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+            img{
+                width: 115px;
+            }
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+
+            li{
+                display: flex;
+                padding: 5px 20px;
+                justify-content: center;
+                align-items: center;
+
+                a{
+                    text-decoration: none;
+                    font-size: 17px;
+                    line-height: 21px;
+                    font-family: 'NoahBold';
+                }
+            }
+        }
+        .tel{
+            a{
+                text-decoration: none;
+                font-size: 17px;
+                text-align: right;
+                line-height: 21px;
+                position: relative;
+
+                &:after{
+                    content: '';
+                    right: -20px;
+                    position: absolute;
+                    top: 10px;
+                    display: block;
+                    background-image: url('../img/arrow-down.svg');
+                    background-repeat: no-repeat;
+                    width: 6px;
+                    height: 3px;
+                }
+            }
+
+        }
     }
 }
