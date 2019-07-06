@@ -21,19 +21,22 @@ var path = {
         html: 'build/',
         js: 'build/js/',
         css: 'build/css',
-        img: 'build/img'
+        img: 'build/img',
+        font: 'build/font'
     },
     src: {
         html: 'src/*.html',
         js: 'src/js/*.js',
         style: 'src/style/*.scss',
-        img: 'src/img/**/*.*'
+        img: 'src/img/**/*.*',
+        font: 'src/font/**/*.*'
     },
     watch: {
         html: "src/**/*.html",
         js: 'src/js/**/*.js',
         style: 'src/style/*.scss',
-        img: 'src/img/**/*.*'
+        img: 'src/img/**/*.*',
+        font: 'src/font/**/*.*'
     },
     clean: './build'
 };
@@ -77,6 +80,12 @@ gulp.task('img:build', function() {
         .pipe(reload({stream: true}));
 });
 
+gulp.task('font:build', function() {
+    gulp.src(path.src.font)
+        .pipe(gulp.dest(path.build.font))
+        .pipe(reload({stream: true}));
+});
+
 gulp.task('style:build', function () {
     gulp.src(path.src.style)
     // .pipe(sourceNaps.init())
@@ -88,7 +97,7 @@ gulp.task('style:build', function () {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('build', ['html:build', 'js:build', 'style:build', 'img:build']);
+gulp.task('build', ['html:build', 'js:build', 'style:build', 'img:build', 'font:build']);
 
 gulp.task('watch', function () {
     watch([path.watch.js], function () {
@@ -102,6 +111,9 @@ gulp.task('watch', function () {
     });
     watch([path.watch.img], function() {
         gulp.start('img:build');
+    });
+    watch([path.watch.font], function() {
+        gulp.start('font:build');
     })
 });
 

@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "Noah";
+    src: url("./Noah-Regular.eot");
+    src: url("./Noah-Regular.woff") format("woff"),
+    url("./Noah-Regular.otf") format("opentype"),
+    url("./Noah-Regular.woff2") format("woff2");
+}

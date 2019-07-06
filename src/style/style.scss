@@ -1,14 +1,17 @@
+// @import "../font/Noah/style.scss";
+
 @-ms-viewport{
   width: device-width;
 }
 
 * {
   box-sizing: border-box;
+  font-family: 'Noah';
 
   font: {
     size: 20px;
   }
-  font-family: 'Montserrat', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
 }
 
 html{
