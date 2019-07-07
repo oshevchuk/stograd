@@ -1,22 +1,67 @@
+@mixin n-columns($min-width, $gutter, $last-equal: false, $max-cols: 5) {
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -$gutter;
+      margin-top: -$gutter;
+  
+      .item {
+        flex: 1 0 $min-width;
+        margin-left: $gutter;
+        margin-top: $gutter;
+  
+        @if $last-equal {
+          @for $i from 2 through $max-cols {
+            $screen-width: ($min-width*$i)+($gutter*$i);
+            $column-width: (100%/$i);
+            @media (min-width: $screen-width) {
+              max-width: calc(#{$column-width} - #{$gutter});
+            }
+          }
+      
+          $column-width: (100%/$max-cols);
+          @media (min-width: $min-width*$max-cols) {
+              min-width: calc(#{$column-width} - #{$gutter});
+          }
+        }
+      }
+    }
+  }
+  
+  @include n-columns(200px,  32px, true, 3);
+
+
 .main-image{
     position: relative;
     min-height: 608px;
     display: flex;
-
+    background-color: black;
+    
+    &>div{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        .container{
+            
+        }
+    }
+    
     img{
         width: 100%;
         height: 100%;
         object-fit: cover;
         position: relative;
-        background-color: grey;
+        background-color: black;
         display: block;
         height: 608px;
     }
     h1{
         font-family: "NoahBold";
-        position: absolute;
+        position: relative;
         top: 135px;
-        left: 30%;
+        left: 16%;
         color: white;
         max-width: 460px;
     }
@@ -25,7 +70,88 @@
 .main{
     .container{
         .large-card{
-            
+            width: 100%;
+            margin: 64px 0;
+
+            img{
+                width: 100%;
+                // min-height: 500px;
+                object-fit: cover;
+            }
         }
     }
+    .banners{
+        margin-bottom: 125px;
+    }
+}
+
+
+.projects{
+    margin-bottom: 60px;
+    .item{
+        padding-bottom: 10px;
+        margin-bottom: 17px;
+
+        img{
+            width: 100%;
+            // height: 384px;
+            object-fit: cover;
+        }
+        h4{
+            margin-top: 21px;
+            margin-bottom: 11px;
+        }
+        p{
+            margin: 0;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        span{
+
+        }
+    }
+}
+
+.info{
+    .num-banner-zone{
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;;
+
+        .num-baner{
+            margin-bottom: 105px;
+
+            span{
+                font-size: 80px;
+                line-height: 88px;
+                font-family: 'NoahBold';
+            }
+            p{
+                font-size: 32px;
+                line-height: 40px;
+                margin: 0;
+            }
+        }
+    }  
+    
+    h3{
+        margin: 0;
+    }
+    p{
+        margin: 38px 0;
+    }
+    a{
+        font-size: 20px;
+        line-height: 25px;
+        display: flex;
+        align-items: center;
+        img{
+            display: block;
+            margin-left: 5px;
+        }
+    }
+}
+
+.map{
+    margin: 117px auto;
 }

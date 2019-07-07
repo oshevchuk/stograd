@@ -6,17 +6,25 @@ p{
 h1{
     font-size: 80px;
     line-height: 72px;
+    font-family: 'NoahBold';
 }
 
 h2{
     font-size: 40px;
     line-height: 32px;
     color: #101010;
+    margin: 29px 0;
+    font-family: 'NoahBold';
 }
-
+h3{
+    font-family: 'NoahBold';
+    font-size: 36px;
+    line-height: 56px;
+}
 h4{
     font-size: 20px;
     line-height: 25px;
+    font-family: 'NoahBold';
 }
 
 a{
@@ -26,4 +34,58 @@ a{
 
 .img{
     background-color: gray;
+}
+
+.status{
+    font-size: 16px;
+    line-height: 20px;
+    color: #FF910D;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+
+    &.start{
+        &:before {
+            content: '';
+            background-image: url('../img/b-starting.svg');
+            width: 10px;
+            height: 11px;
+            background-repeat: no-repeat;
+            top: 0;
+            left: 0;
+            position: relative;
+            display: block;
+            margin-right: 6px;
+        }
+    }
+    &.processing{
+        &::before{
+            content: '';
+            background-image: url('../img/processing.svg');
+            width: 10px;
+            height: 11px;
+            background-repeat: no-repeat;
+            top: 0;
+            left: 0;
+            position: relative;
+            display: block;
+            margin-right: 6px;
+        }
+    }
+    &.b-done{
+        color: #00914C;
+
+        &::before{
+            content: '';
+            background-image: url('../img/b-done.png');
+            width: 10px;
+            height: 11px;
+            background-repeat: no-repeat;
+            top: 0;
+            left: 0;
+            position: relative;
+            display: block;
+            margin-right: 6px;
+        }
+    }
 }

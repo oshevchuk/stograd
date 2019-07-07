@@ -23,8 +23,9 @@ html, body{
 
 body{
   position: relative;
-  padding-bottom: 176px;
+  padding-bottom: 250px;
   min-height: 100vh;
+  background-color: white;
 }
 
 .footer{
@@ -50,6 +51,12 @@ body{
   width: 100%;
 }
 
+.col-33{
+  width: calc(33% - 16px);
+}
+.col-66{
+  width: calc(67% - 16px);
+}
 
 @import "ui.scss";
 

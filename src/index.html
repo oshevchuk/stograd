@@ -14,18 +14,144 @@
 
 <div class="container-fluid">
     <div class="main-image">
-        <img  alt="" class="img">
-        <h1>
-            Те з чого все починається   
-        </h1>
+        <img src="./img/main.png">
+        <div>
+            <div class="container">    
+                <h1>
+                    Те з чого все починається   
+                </h1>
+            </div>
+        </div>
     </div>
 </div>
 
 <div class="main">
-    <div class="container">
+    <div class="container banners">
         <div class="large-card">
-            <img alt="">
+            <img src="./img/banner-1.jpg">
         </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Наші проекти</h2>
+    <div class="projects">
+        <div class="item">
+            <img src="./img/item1.jpg">
+            <h4> ЖК Prestige Apartments</h4>
+            <p>вул. Толстого, 10 </p>
+            <span class="status start">
+                Розпочато будівництво 
+            </span>
+        </div>
+
+        <div class="item">
+            <img src="./img/item1.jpg">
+            <h4> ЖК Prestige Apartments</h4>
+            <p>вул. Толстого, 10 </p>
+            <span class="status processing">
+                Розпочато будівництво 
+            </span>
+        </div>
+
+        <div class="item">
+            <img src="./img/item1.jpg">
+            <h4> ЖК Prestige Apartments</h4>
+            <p>вул. Толстого, 10 </p>
+            <span class="status b-done">
+                Розпочато будівництво 
+            </span>
+        </div>
+
+        <div class="item">
+            <img src="./img/item1.jpg">
+            <h4> ЖК Prestige Apartments</h4>
+            <p>вул. Толстого, 10 </p>
+            <span class="status start">
+                Розпочато будівництво 
+            </span>
+        </div>
+
+        <div class="item">
+            <img src="./img/item1.jpg">
+            <h4> ЖК Prestige Apartments</h4>
+            <p>вул. Толстого, 10 </p>
+            <span class="status processing">
+                Розпочато будівництво 
+            </span>
+        </div>
+
+        <div class="item">
+            <img src="./img/item1.jpg">
+            <h4> ЖК Prestige Apartments</h4>
+            <p>вул. Толстого, 10 </p>
+            <span class="status b-done">
+                Розпочато будівництво 
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Партнерські проекти</h2>
+    <div class="projects">
+        <div class="item">
+            <img src="./img/item1.jpg">
+            <h4> ЖК Prestige Apartments</h4>
+            <p>вул. Толстого, 10 </p>
+            <span class="status start">
+                Розпочато будівництво 
+            </span>
+        </div>
+
+        <div class="item">
+            <img src="./img/item1.jpg">
+            <h4> ЖК Prestige Apartments</h4>
+            <p>вул. Толстого, 10 </p>
+            <span class="status processing">
+                Розпочато будівництво 
+            </span>
+        </div>
+
+        <div class="item">
+            <img src="./img/item1.jpg">
+            <h4> ЖК Prestige Apartments</h4>
+            <p>вул. Толстого, 10 </p>
+            <span class="status b-done">
+                Розпочато будівництво 
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="container info">
+    <div class="row space-between">
+        <div class="col-33">
+            <div class="num-banner-zone">
+                <div class="num-baner">
+                    <span>10</span>
+                    <p>років будуємо для вас</p>
+                </div>
+                <div class="num-baner">
+                    <span>1500</span>
+                    <p>рсімей вже заселилися</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-66">
+            <h3>Для того щоб створити найбільш комфортне місце для вашого проживання ми враховуємо всі логістичні та технологічні фактори, використовуємо новітні технології та досвід від наших західних партнерів.</h3>
+            <p>
+                Для вашого здоров’я ми будужмо з екологічно чистих матеріалів вищої якості, довговічних та енергоефективних. У всіх будинках присутня висока міжквартирна та загальна шумоізоляція.
+            </p>
+            <a href="#">Про компанію <img src="./img/Arrow.svg" alt=""></a>
+        </div>
+    </div>
+</div>
+
+<div class="container map">
+    <h2>Наші проекти на мапі</h2>
+    <div id="map">
+
     </div>
 </div>
 
@@ -33,4 +159,23 @@
 @@include('./template/footer.html')
 
 </body>
+
+<script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          var uluru = {lat: -25.344, lng: 131.036};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 4, center: uluru});
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+            </script>
+
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6vG6s4GW4qVYsAHk7fAjfDAb8fPo5eCo&callback=initMap">
+    </script>
+
 </html>
