@@ -15,6 +15,13 @@ h2{
     color: #101010;
     margin: 29px 0;
     font-family: 'NoahBold';
+
+    &.biggest{
+        font-size: 48px;
+        line-height: 60px;
+        margin-top: 15px;
+        margin-bottom: 49px;
+    }
 }
 h3{
     font-family: 'NoahBold';
@@ -87,5 +94,15 @@ a{
             display: block;
             margin-right: 6px;
         }
+    }
+}
+
+.bread-crmp{
+    margin-top: 35px;
+    margin-bottom: 15px;
+    a{
+        color: #4F4F4F;
+        font-size: 14px;
+        line-height: 17px;
     }
 }

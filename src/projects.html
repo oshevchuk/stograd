@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stograd</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./font/Noah/style.css">
+</head>
+<body>
+
+
+@@include('./template/header.html')
+
+<div class="container bread-crmp">
+    <a href="index.html">Головна -</a>
+</div>
+
+
+<div class="container">
+    <h2 class="biggest">Наші проекти</h2>
+    <div class="projects">
+        <div class="item">
+            <img src="./img/item1.jpg">
+            <h4> ЖК Prestige Apartments</h4>
+            <p>вул. Толстого, 10 </p>
+            <span class="status start">
+                Розпочато будівництво 
+            </span>
+        </div>
+
+        <div class="item">
+            <img src="./img/item2.jpg">
+            <h4> ЖК Bridge Tower</h4>
+            <p>вул. Драгоманова, 27 </p>
+            <span class="status processing">
+                Триває будівництво
+            </span>
+        </div>
+
+        <div class="item">
+            <img src="./img/item3.jpg">
+            <h4> ЖК Сонячне містечко</h4>
+            <p>вул. Лабунського, 1</p>
+            <span class="status b-done">
+                Здано в експлуатацію
+            </span>
+        </div>
+
+        <div class="item">
+            <img src="./img/item4.jpg">
+            <h4> ЖК Prestige Apartments</h4>
+            <p>вул. Степана Бандери </p>
+            <span class="status b-done">
+                Здано в експлуатацію
+            </span>
+        </div>
+
+        <div class="item">
+            <img src="./img/item5.jpg">
+            <h4> Житловий будинок на Курчатова</h4>
+            <p>вул. Курчатова, 1Б  </p>
+            <span class="status b-done">
+                Здано в експлуатацію
+            </span>
+        </div>
+
+        <div class="item">
+            <img src="./img/item6.jpg">
+            <h4> Житловий будинок на Міцкевича</h4>
+            <p> вул. Міцкевича, 130</p>
+            <span class="status b-done">
+                Здано в експлуатацію
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Партнерські проекти</h2>
+    <div class="projects">
+        <div class="item">
+            <img src="./img/item1.jpg">
+            <h4> ЖК Prestige Apartments</h4>
+            <p>вул. Толстого, 10 </p>
+            <span class="status start">
+                Розпочато будівництво 
+            </span>
+        </div>
+
+        <div class="item">
+            <img src="./img/item2.jpg">
+            <h4> ЖК Bridge Tower</h4>
+            <p>вул. Драгоманова, 27 </p>
+            <span class="status processing">
+                Триває будівництво
+            </span>
+        </div>
+
+        <div class="item">
+            <img src="./img/item7.jpg">
+            <h4> Котедж по вул. Макарова-Пржевальського</h4>
+            <p>Район вулиць Макарова-Пржевальського </p>
+            <span class="status processing">
+                Триває будівництво
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Наше портфоліо</h2>
+    <div class="projects">
+        <div class="item">
+            <img src="./img/item1.jpg">
+            <h4> ЖК Prestige Apartments</h4>
+            <p>вул. Толстого, 10 </p>
+            <span class="status start">
+                Розпочато будівництво 
+            </span>
+        </div>
+
+        <div class="item">
+            <img src="./img/item2.jpg">
+            <h4> ЖК Bridge Tower</h4>
+            <p>вул. Драгоманова, 27 </p>
+            <span class="status processing">
+                Триває будівництво
+            </span>
+        </div>
+
+        <div class="item">
+            <img src="./img/item7.jpg">
+            <h4> Котедж по вул. Макарова-Пржевальського</h4>
+            <p>Район вулиць Макарова-Пржевальського </p>
+            <span class="status processing">
+                Триває будівництво
+            </span>
+        </div>
+    </div>
+</div>
+
+
+@@include('./template/footer.html')
+
+</body>
+
+<script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          var uluru = {lat: 50.619, lng: 25.250};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 16, center: uluru});
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+            </script>
+
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6vG6s4GW4qVYsAHk7fAjfDAb8fPo5eCo&callback=initMap">
+    </script>
+
+</html>
