@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stograd</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./font/Noah/style.css">
+</head>
+<body>
+
+
+@@include('./template/header.html')
+
+<div class="container bread-crmp">
+    <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="index.html">Наші проекти</a></li>
+    </ul>
+</div>
+
+<div class="main">
+    <div class="container banners">
+        <div class="large-card">
+            <img src="./img/image6.jpg">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="house-description">
+        <div class="col-75">
+            <div class="content">
+                <div class="short-info">
+
+                </div>
+                <p>
+                    Функціональність помножена на комфорт. Команда досвідчених архітекторів змогла втілити цей основоположний принцип у проекті нашого житлового комплексу.
+                </p><p>
+                    Кожен елемент квартири розрахований таким чином, аби мешканці нашого житлового комплексу могли підтримувати динамічний темп життя і водночас почувались затишно і зручно.
+                </p>
+                <a href="#" class="tech-info">
+                    Технічна інформація
+                </a>
+            </div>
+        </div>
+        <div class="col-25">
+            <a href="#" class="show-info"><img src="./img/ic-appartments.svg" alt=""> Переглянути квартири</a>
+            <div class="description">
+                <div class="row">
+                    <div class="name">1-кімнатні</div>
+                    <div class="value">42.1 — 43.7 м²</div>
+                </div>
+                <div class="row">
+                    <div class="name">2-кімнатні</div>
+                    <div class="value">76.4 м²</div>
+                </div>
+                <div class="row">
+                    <div class="name">3-кімнатні</div>
+                    <div class="value">100.5 м² — 124.7 м2</div>
+                </div>
+                <div class="row">
+                    <div class="name">Комерційні площі</div>
+                    <div class="value"><a href="#">Переглянути  </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@@include('./template/footer.html')
+
+</body>
+
+<script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          var uluru = {lat: 50.619, lng: 25.250};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 16, center: uluru});
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+            </script>
+
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6vG6s4GW4qVYsAHk7fAjfDAb8fPo5eCo&callback=initMap">
+    </script>
+
+</html>

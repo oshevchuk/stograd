@@ -100,9 +100,29 @@ a{
 .bread-crmp{
     margin-top: 35px;
     margin-bottom: 15px;
-    a{
-        color: #4F4F4F;
-        font-size: 14px;
-        line-height: 17px;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        li{
+            margin: 0;
+            padding: 0;
+            a{
+                display: flex;
+                align-items: center;
+                color: #4F4F4F;
+                font-size: 14px;
+                line-height: 17px;
+                margin-right: 8px;
+                &:after{
+                    content: '-';
+                    position: relative;;
+                    display: block;
+                    margin-left: 8px;
+                }
+            }
+        }
     }
 }

@@ -1,0 +1,16 @@
+<svg width="56" height="40" viewBox="0 0 56 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 2L24 12L1.5 12" stroke="white" stroke-dasharray="2 2"/>
+<mask id="path-2-inside-1" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M56 40L56 0L0 -2.44784e-06L-1.74846e-06 40L56 40ZM54 38L54 2L2 2L2 38L54 38Z"/>
+</mask>
+<path d="M56 0L57 4.37115e-08L57 -1L56 -1L56 0ZM56 40L56 41L57 41L57 40L56 40ZM0 -2.44784e-06L4.37114e-08 -1L-1 -1L-1 -2.49155e-06L0 -2.44784e-06ZM-1.74846e-06 40L-1 40L-1 41L-1.79217e-06 41L-1.74846e-06 40ZM54 2L55 2L55 1L54 1L54 2ZM54 38L54 39L55 39L55 38L54 38ZM2 2L2 0.999998L1 0.999998L1 2L2 2ZM2 38L0.999998 38L0.999998 39L2 39L2 38ZM55 -4.37115e-08L55 40L57 40L57 4.37115e-08L55 -4.37115e-08ZM-4.37114e-08 0.999998L56 1L56 -1L4.37114e-08 -1L-4.37114e-08 0.999998ZM0.999998 40L1 -2.40413e-06L-1 -2.49155e-06L-1 40L0.999998 40ZM56 39L-1.70474e-06 39L-1.79217e-06 41L56 41L56 39ZM53 2L53 38L55 38L55 2L53 2ZM2 3L54 3L54 1L2 0.999998L2 3ZM3 38L3 2L1 2L0.999998 38L3 38ZM54 37L2 37L2 39L54 39L54 37Z" fill="white" mask="url(#path-2-inside-1)"/>
+<rect x="38.75" y="22.25" width="0.5" height="36.5" transform="rotate(90 38.75 22.25)" stroke="white" stroke-width="0.5"/>
+<rect x="54.75" y="14.25" width="0.5" height="15.5" transform="rotate(90 54.75 14.25)" stroke="white" stroke-width="0.5"/>
+<rect x="54.75" y="18.25" width="0.5" height="15.5" transform="rotate(90 54.75 18.25)" stroke="white" stroke-width="0.5"/>
+<rect x="54.75" y="22.25" width="0.5" height="15.5" transform="rotate(90 54.75 22.25)" stroke="white" stroke-width="0.5"/>
+<rect x="54.75" y="26.25" width="0.5" height="15.5" transform="rotate(90 54.75 26.25)" stroke="white" stroke-width="0.5"/>
+<rect x="54.75" y="30.25" width="0.5" height="15.5" transform="rotate(90 54.75 30.25)" stroke="white" stroke-width="0.5"/>
+<rect x="54.75" y="34.25" width="0.5" height="15.5" transform="rotate(90 54.75 34.25)" stroke="white" stroke-width="0.5"/>
+<rect x="15.75" y="37.75" width="0.5" height="14.5" transform="rotate(-180 15.75 37.75)" stroke="white" stroke-width="0.5"/>
+<rect x="39.75" y="37.75" width="0.500001" height="26.5" transform="rotate(-180 39.75 37.75)" stroke="white" stroke-width="0.500001"/>
+</svg>
