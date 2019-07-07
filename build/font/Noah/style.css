@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Noah";
+    src: url("./Noah-Regular.eot");
+    src: url("./Noah-Regular.woff") format("woff"),
+    url("./Noah-Regular.otf") format("opentype"),
+    url("./Noah-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "NoahBold";
+    src: url("./Noah-Bold.eot");
+    src: url("./Noah-Bold.woff") format("woff"),
+    url("./Noah-Bold.otf") format("opentype"),
+    url("./Noah-Bold.woff2") format("woff2");
+}
