@@ -32,7 +32,14 @@
         <div class="col-75">
             <div class="content">
                 <div class="short-info">
-
+                    <div class="col-50">
+                        <span>Розташування</span>
+                        <h3 class="small">вул. Толстого, 10 </h3>
+                    </div>
+                    <div class="col-50">
+                        <span>Ціна</span>
+                        <h3 class="small">від 700 у.о./м2</h3>
+                    </div>
                 </div>
                 <p>
                     Функціональність помножена на комфорт. Команда досвідчених архітекторів змогла втілити цей основоположний принцип у проекті нашого житлового комплексу.
@@ -61,7 +68,7 @@
                 </div>
                 <div class="row">
                     <div class="name">Комерційні площі</div>
-                    <div class="value"><a href="#">Переглянути  </a></div>
+                    <div class="value"><a href="#">Переглянути <img src="./img/Line2.svg" alt="">  </a></div>
                 </div>
             </div>
         </div>
@@ -72,23 +79,5 @@
 @@include('./template/footer.html')
 
 </body>
-
-<script>
-        // Initialize and add the map
-        function initMap() {
-          // The location of Uluru
-          var uluru = {lat: 50.619, lng: 25.250};
-          // The map, centered at Uluru
-          var map = new google.maps.Map(
-              document.getElementById('map'), {zoom: 16, center: uluru});
-          // The marker, positioned at Uluru
-          var marker = new google.maps.Marker({position: uluru, map: map});
-        }
-            </script>
-
-
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6vG6s4GW4qVYsAHk7fAjfDAb8fPo5eCo&callback=initMap">
-    </script>
 
 </html>

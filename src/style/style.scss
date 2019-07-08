@@ -57,7 +57,9 @@ body{
 .col-66{
   width: calc(67% - 16px);
 }
-
+.col-50{
+  width: calc(50% - 16px);
+}
 @import "ui.scss";
 
 @media(min-width: 576px) {
@@ -92,3 +94,4 @@ body{
 @import "partials/footer.scss";
 
 @import "partials/main.scss";
+@import "partials/house-desc.scss";
