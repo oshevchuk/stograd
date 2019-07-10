@@ -9,6 +9,7 @@
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css" integrity="sha256-uXhoVqsazfMtamqLl8uOpYKcZ7bRUZWDmoLcPOpeApw=" crossorigin="anonymous" />
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
@@ -136,7 +137,7 @@
 </div>
 
 <div class="container type1-gallery">
-    <div class="swiper-container">
+    <div class="swiper-container sw-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="./img/image3.jpg" alt=""></div>
           <div class="swiper-slide"><img src="./img/image3.jpg" alt=""></div>
@@ -305,37 +306,69 @@
 <div class="container gallery">
     <div class="swiper-container gallery-top">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/1)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/3)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/4)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/5)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/6)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/7)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/8)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/9)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/10)"></div>
+            <div class="swiper-slide" style="background-image:url('../img/g1.jpg')"></div>
+            <div class="swiper-slide" style="background-image:url('../img/g2.jpg')"></div>
+            <div class="swiper-slide" style="background-image:url('../img/g3.jpg')"></div>
+            <div class="swiper-slide" style="background-image:url('../img/g4.jpg')"></div>
+            <div class="swiper-slide" style="background-image:url('../img/g5.jpg')"></div>
+            <div class="swiper-slide" style="background-image:url('../img/g6.jpg')"></div>
+            <div class="swiper-slide" style="background-image:url('../img/g7.jpg')"></div>
         </div>
         <!-- Add Arrows -->
-        <div class="swiper-button-next swiper-button-white"></div>
-        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next">
+            <img src="./img/Vector2.svg" alt="">
+        </div>
+        <div class="swiper-button-prev">
+            <img src="./img/Vector2.svg" alt="">
+        </div>
         </div>
         <div class="swiper-container gallery-thumbs">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/1)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/3)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/4)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/5)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/6)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/7)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/8)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/9)"></div>
-            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/10)"></div>
+            <div class="swiper-slide" style="background-image:url('../img/g1.jpg')"></div>
+            <div class="swiper-slide" style="background-image:url('../img/g2.jpg')"></div>
+            <div class="swiper-slide" style="background-image:url('../img/g3.jpg')"></div>
+            <div class="swiper-slide" style="background-image:url('../img/g4.jpg')"></div>
+            <div class="swiper-slide" style="background-image:url('../img/g5.jpg')"></div>
+            <div class="swiper-slide" style="background-image:url('../img/g6.jpg')"></div>
+            <div class="swiper-slide" style="background-image:url('../img/g7.jpg')"></div>
         </div>
     </div>
 </div>
 
+<div class="container block">
+    <h2>
+        Про будівництво
+    </h2>
+    <div class="row space-between">
+        <p class="col-50">
+            Будуючи наші об’єкти, ми дотримуємось усіх стандартів згідно з державними будівельними нормами (ДБН), залучаємо досвід різних країн світу, адже наша компанія не стоїть на місці, а розвивається, та іде в ногу з часом. Компанія “Стоград” завжди використовує матеріали вищої якості, довговічні, енергоефективні, як це прийнято у всьому світі
+        </p>
+        <p class="col-50">
+            Екологічно чисті матеріли, аби ви та ваша сім’я, живучи у будинку, не мали проблем зі здоров’ям. Усі наші об’єкти максимально продумані та комфортні. Ми знаємо, як зараз важливо мати поруч хорошу інфраструктуру, розвинене транспортне сполучення, та багато інших важливих об’єктів, тому і місця для будинків обираємо відповідні.
+        </p>
+    </div>
+</div>
+
+<div class="container block">
+    <h2>Фотозвіт</h2>
+    <div class="photos">
+        <a href="#inline" class="inline">
+            <img src="./img/image4.jpg" alt="">
+            <span>14 фото</span>
+        </a>        
+    </div>
+
+    <div id="inline" style="display: none">
+        content goes here...
+    </div>
+</div>
+
+<div class="container block">
+    <h2>Фото 360°</h2>
+    <div class="photos">
+        <img src="./img/image9.jpg" alt="">
+    </div>
+</div>
 
 <div class="footer">
     <div class="container-fluid">
@@ -373,7 +406,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 
 <script>
-    var swiper = new Swiper('.swiper-container', {
+    $(".inline").modaal();
+
+    var swiper = new Swiper('.sw-container', {
         navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
