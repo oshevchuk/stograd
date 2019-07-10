@@ -60,27 +60,40 @@ body{
 .col-50{
   width: calc(50% - 16px);
 }
+// 12 colums layout
+.col-1{
+  width: calc(8.33% - 16px);
+}
+.col-2{
+  width: calc(16.66% - 16px);
+}
+.col-4{
+  width: calc(33% - 16px);
+}
+.col-7{
+  width: calc(58.33% - 16px);
+}
 @import "ui.scss";
 
-@media(min-width: 576px) {
+@media(max-width: 576px) {
   .container {
     max-width: 540px;
   }
 }
 
-@media(min-width: 768px) {
+@media(max-width: 768px) {
   .container {
     max-width: 720px;
   }
 }
 
-@media(min-width: 992px) {
+@media(max-width: 992px) {
   .container {
     max-width: 960px;
   }
 }
 
-@media(min-width: 1200px) {
+@media(max-width: 1200px) {
   .container {
     max-width: 1140px;
   }
