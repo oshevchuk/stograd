@@ -1,0 +1,66 @@
+.plan{
+    .img{
+        background-color: grey;
+        display: block;
+        width: 100%;
+        min-height: 384px;
+    }
+    .row{
+        margin: 32px 0;
+    }
+    a{
+        color: #00914C;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 36px;
+        min-height: 64px;
+        border: 1px solid #00914C;
+        img{
+            padding-right: 16px;
+        }
+    }
+}
+
+select{
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding: 18px 24px;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1px solid #D0D0D0;
+    outline: none;
+
+    option{
+        height: 40px;
+    }
+}
+
+.table-info{
+    margin-bottom: 128px;
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 32px;
+        border-bottom: 1px solid #EAEAEA;
+
+        &.sale{
+            font-size: 20px;
+            line-height: 25px;
+            
+            div{
+                color: #898989;
+            }
+            img{
+                opacity: 0.5;
+            }           
+            span{
+                color: #FF910D;
+
+            }
+        }
+    }
+}

@@ -73,6 +73,9 @@ body{
 .col-7{
   width: calc(58.33% - 16px);
 }
+.col-8{
+  width: calc(66.66% - 16px);
+}
 @import "ui.scss";
 
 @media(max-width: 576px) {
@@ -108,3 +111,4 @@ body{
 
 @import "partials/main.scss";
 @import "partials/house-desc.scss";
+@import "partials/info.scss";
