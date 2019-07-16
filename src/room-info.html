@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stograd</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./font/Noah/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css" integrity="sha256-uXhoVqsazfMtamqLl8uOpYKcZ7bRUZWDmoLcPOpeApw=" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+
+@@include('./template/header.html')
+
+
+<div class="container bread-crmp">
+    <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="index.html">Наші проекти</a></li>
+    </ul>
+</div>
+
+<div class="container">
+  <h2 class="biggest">Двокімнатна квартира 2Д</h2>
+
+  <div class="room-info">
+    <div class="col-5">
+      <div class="info-banner">
+        <p class="name">
+          ЖК Bridge Tower
+        </p>
+        <div class="row">
+          <div class="item">
+            <span>Загальна площа </span>
+            <b class="value">65,5 м2</b>
+          </div>
+          <div class="item">
+            <span>Поверх </span>
+            <b class="value">9</b>
+          </div>
+          <div class="item">
+            <span>Житлова площа  </span>
+            <b class="value">34,6 м2</b>
+          </div>
+          <div class="item">
+            <span>Ціна </span>
+            <b class="value">248 000$</b>
+          </div>
+        </div>
+      </div>
+      <div class="actions">
+        <a href="#">Записатися на перегляд</a>
+        <a href="#">
+            <img src="./img/ic-pdf.svg" alt="">
+            Завантажити планування 
+        </a>
+      </div>
+      <div class="plan">
+        <span>Планування 9 поверху</span>
+        <a href="#">
+          <img src="./img/image5.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="col-7">
+      <div class="container type1-gallery">
+        <div class="swiper-container sw-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/Group2.svg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/Group2.svg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/Group2.svg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/Group2.svg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/Group2.svg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/Group2.svg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/Group2.svg" alt=""></div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next">
+                <img src="./img/Vector2.svg" alt="">
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./img/Vector2.svg" alt="">
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+@@include('./template/footer.html')
+
+</body>
+
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+  <script>
+  var swiper = new Swiper('.sw-container', {
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+    });
+  </script>
+</html>

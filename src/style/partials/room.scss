@@ -26,3 +26,65 @@
     }
   }
 }
+
+.room-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &>div{
+    display: flex;
+    flex-direction: column;
+  }
+  .type1-gallery{
+    margin: 0;
+  }
+  .actions{
+    a{
+
+    }
+  }
+  .plan{
+    span{
+
+    }
+    a{
+      img{
+
+      }
+    }
+  }
+}
+
+.info-banner{
+  p.name{
+    font-size: 20px;
+    color: #101010;
+    line-height: 25px;
+  }
+  div.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .item{
+      width: calc(50% - 16px);
+      display: flex;
+      flex-direction: column;
+      margin: 9px 0;
+
+      span{
+        font-size: 14px;
+        line-height: 17px;
+      }
+      b.value{
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: bold;
+        display: block;
+        margin: 8px 0;
+      }
+    }
+  }
+}
