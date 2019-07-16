@@ -36,7 +36,15 @@ select{
         height: 40px;
     }
 }
+.table-caption{
+    display: flex;
+    justify-content: space-between;
 
+    div {
+        color: #898989;
+        font-size: 20px;
+    }
+}
 .table-info{
     margin-bottom: 128px;
 

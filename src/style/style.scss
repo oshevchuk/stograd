@@ -6,7 +6,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Noah';
+  font-family: 'Noah', Helvetica, sans-serif;
   color: #252525;
 
   font: {
@@ -73,6 +73,9 @@ body{
 .col-5{
   width: calc(41.66% - 16px);
 }
+.col-6{
+  width: calc(50% - 16px);
+}
 .col-7{
   width: calc(58.33% - 16px);
 }
@@ -115,3 +118,4 @@ body{
 @import "partials/main.scss";
 @import "partials/house-desc.scss";
 @import "partials/info.scss";
+@import "partials/room.scss";

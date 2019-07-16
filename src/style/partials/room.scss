@@ -1,0 +1,28 @@
+.room{
+  margin-bottom: 53px;
+
+  .row.top{
+    margin-bottom: 32px;
+
+    img{
+      min-height: 592px;
+      object-fit: contain;
+      width: 100%;
+    }
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    & > div{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      select{
+        // width: 100%;
+      }
+    }
+  }
+}
