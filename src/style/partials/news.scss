@@ -6,6 +6,9 @@
   .item{
     margin-bottom: 128px;
 
+    &>a{
+      display: block;
+    }
     span.date{
       color: #898989;
       font-size: 14px;
@@ -23,5 +26,31 @@
       line-height: 32px;
       color: #252525;
     }
+  }
+}
+
+.news-article{
+  margin-bottom: 128px;
+  .type1-gallery {
+    margin: 40px 0;
+    .swiper-container .swiper-wrapper .swiper-slide{
+      min-height: 408px;
+      height: 408px;
+    }
+  }
+  p{
+    a{
+      color: #00914C;
+    }
+  }
+}
+
+.comment{
+  border-left: 1px solid #D6D6D6;
+  padding-left: 16px;
+  p{
+    font-style: italic;
+    margin: 8px;
+    font-size: 20px;
   }
 }
