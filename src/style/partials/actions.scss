@@ -1,0 +1,23 @@
+.actions{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+
+  a.item{
+    width: calc(50% - 16px);
+    margin-bottom: 64px;
+    display: block;
+
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.large-image{
+  width: 100%;
+  display: block;
+  margin: 32px 0;
+}

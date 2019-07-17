@@ -139,3 +139,16 @@ a{
         margin-bottom: 20px;
     }
 }
+
+a.btn{
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    color: white;
+    background-color: #00914C;
+    min-height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;    
+}
