@@ -1,0 +1,27 @@
+.news{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .item{
+    margin-bottom: 128px;
+
+    span.date{
+      color: #898989;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    h2{
+      margin: 16px 0;
+      line-height: 48px;
+      font-size: 40px;
+      color: #101010;
+    }
+    p{
+      margin: 0;
+      font-size: 20px;
+      line-height: 32px;
+      color: #252525;
+    }
+  }
+}
