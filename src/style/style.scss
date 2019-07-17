@@ -45,7 +45,10 @@ body{
 .space-between{
   justify-content: space-between;
 }
-
+.center{
+  display: flex;
+  justify-content: center;
+}
 .row{
   display: flex;
   width: 100%;
@@ -81,6 +84,9 @@ body{
 }
 .col-8{
   width: calc(66.66% - 16px);
+}
+.col-10{
+  width: calc(83.33% - 16px);
 }
 @import "ui.scss";
 
