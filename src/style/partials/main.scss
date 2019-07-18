@@ -131,7 +131,11 @@
                 line-height: 40px;
                 margin: 0;
             }
+            &:last-child{
+                margin-bottom: 0;
+            }
         }
+        
     }  
     
     h3{
@@ -153,7 +157,7 @@
 }
 
 .map{
-    margin: 117px auto;
+    // margin: 117px auto;
 }
 
 #map{
@@ -216,13 +220,14 @@
     justify-content: space-between;
     // flex-wrap: wrap;
     width: 100%;
+    margin-bottom: 48px;
 
     &>div{
         &>img{
             width: 100%;     
             max-width: 208px;
             height: 152px;
-            object-fit: cover;       
+            object-fit: cover;    
         }
     }
     .contact{
@@ -230,7 +235,10 @@
             font-size: 16px;
             line-height: 32px;
             color: #252525;
-
+            img{
+                display: inline-block;
+                margin-left: 6px;
+            }
             b{
                 line-height: 32px;
                 color: #101010;
@@ -274,4 +282,8 @@
             }
         }
     }
+}
+
+.content{
+    margin: 128px auto;
 }

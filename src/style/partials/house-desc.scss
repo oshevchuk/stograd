@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
 
-    .content{
+    .content_{
         max-width: 595px;
         display: flex;
         flex-direction: column;
@@ -237,8 +237,8 @@
 }
 
 .gallery{
-    margin-bottom: 123px;
-    margin-top: 115px;
+    // margin-bottom: 123px;
+    // margin-top: 115px;
 
     .swiper-container {
         width: 100%;

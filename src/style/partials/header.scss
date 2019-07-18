@@ -85,17 +85,21 @@
             }
         }
         .tel{
+            position: relative;
+
             a{
                 text-decoration: none;
                 font-size: 17px;
                 text-align: right;
                 line-height: 21px;
                 position: relative;
+                display: inline-flex;
 
                 &:after{
                     content: '';
-                    right: -20px;
-                    position: absolute;
+                    // right: -20px;
+                    margin-left: 23px;
+                    position: relative;
                     top: 10px;
                     display: block;
                     background-image: url('../img/arrow-down.svg');
@@ -104,7 +108,29 @@
                     height: 3px;
                 }
             }
+            .overlay{
+                position: absolute;
+                padding: 21px 30px;
+                background-color: white;
+                width: 450px;
+                top: -20px;
+                right: 0px;
+                display: flex;
+                font-size: 17px;
+                line-height: 24px;
+                border: 1px solid #E9E9E9;
+                display: none;
 
+                .phones{
+                    margin-left: 48px;
+                    min-width: 132px;
+                    font-size: 17px;
+                    line-height: 24px;
+                }
+            }
+            &:hover .overlay{
+                display: flex;
+            }
         }
     }
 }
