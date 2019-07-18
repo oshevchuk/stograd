@@ -230,10 +230,47 @@
             font-size: 16px;
             line-height: 32px;
             color: #252525;
-            
+
             b{
                 line-height: 32px;
                 color: #101010;
+            }
+        }
+    }
+}
+
+.comfort{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .item{
+        width: calc(50% - 16px);
+        margin: 47px 0;
+
+        &>div{
+            display: flex;
+
+            div.col-2{
+                margin-right: 32px;
+                img{
+
+                }
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                max-width: 280px;
+                b{
+                    font-size: 20px;
+                    line-height: 25px;
+                    margin-bottom: 16px;
+                    display: block;
+                }   
+                span{
+                    font-size: 16px;
+                    line-height: 24px;
+                } 
             }
         }
     }
