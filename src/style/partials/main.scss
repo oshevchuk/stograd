@@ -287,3 +287,11 @@
 .content{
     margin: 128px auto;
 }
+
+.based{
+    display: flex;
+    margin-top: 80px;
+    p:first-child{
+        margin-top: 0;
+    }
+}

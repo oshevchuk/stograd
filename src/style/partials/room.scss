@@ -31,10 +31,16 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 40px;
 
   &>div{
     display: flex;
     flex-direction: column;
+  }
+  .info-banner{
+    p{
+      margin-top: 0;
+    }
   }
   .type1-gallery{
     margin: 0;
@@ -59,6 +65,7 @@
 
       img{
         display: inline-block;
+        margin-right: 16px;
       }
       &.btn{
         background-color: #00914C;
