@@ -126,7 +126,7 @@
         </div>
       </div>
       <div class="actions">
-        <a href="#" class="btn">Записатися на перегляд</a>
+        <a href="#inline" class="btn inline">Записатися на перегляд</a>
         <a href="#">
             <img src="./img/ic-pdf.svg" alt="">
             Завантажити планування 
@@ -197,6 +197,17 @@
 <h2>&nbsp;</h2>
 
 
+<div id="inline" style="display: none">
+  <div class="call-show">
+      <h4>Записатися на перегляд</h4>
+      <span>Номер телефону</span>
+      <div class="row">
+        <input type="text" placeholder="Введіть номер телефону">
+        <a href="#" class="btn">Записатися</a>
+      </div>
+  </div>
+</div>
+
 <div class="footer">
     <div class="container-fluid">
         <div class="container">
@@ -226,11 +237,13 @@
 
 </body>
 
-
+<script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"> </script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 
   <script>
+  $(".inline").modaal({width: 600});
+
   var swiper = new Swiper('.sw-container', {
         navigation: {
         nextEl: '.swiper-button-next',

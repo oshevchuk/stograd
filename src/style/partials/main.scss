@@ -364,3 +364,26 @@
         }
     }
 }
+
+.call-show{
+    h4{
+        margin-top: 0;
+    }
+    .row{
+        display: flex;
+    }
+    span{
+        font-size: 14px;
+        line-height: 32px;
+    }
+    input{
+        min-width: 300px;
+        border:  1px solid #898989;
+        outline: none;
+        padding: 10px 25px;
+        width: 100%;
+    }
+    a{
+        min-width: 170px;
+    }
+}
