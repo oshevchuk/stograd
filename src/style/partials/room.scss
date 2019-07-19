@@ -120,6 +120,7 @@
         font-weight: bold;
         display: block;
         margin: 8px 0;
+        font-family: 'NoahBold';
       }
     }
   }
@@ -196,6 +197,28 @@
       &.sale{
         color: #898989;
       }
+    }
+  }
+}
+
+.room-dialog{
+  h4{
+    margin-top: 0;
+  }
+  &>img{
+    width: 100%;
+    display: block;
+    margin: 128px auto;
+  }
+  span{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+
+    img{
+      display: block;
+      width: auto;
+      margin-right: 8px;
     }
   }
 }
