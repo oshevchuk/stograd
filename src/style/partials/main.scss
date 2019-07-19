@@ -387,3 +387,35 @@
         min-width: 170px;
     }
 }
+
+.text-banner{
+    display: flex;
+    background-color: #00914C;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 368px;
+    position: relative;
+
+    &:before{
+        content: '';
+        display: block;
+        height: 100%;
+        width: 274px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url('../img/Union.png');
+        background-repeat: no-repeat;
+    }
+
+    h3{
+        color: white;
+        max-width: 592px;
+        width: 100%;
+        margin: 0;
+        margin-left: 208px;
+        position: relative;
+        z-index: 10;
+    }
+}
