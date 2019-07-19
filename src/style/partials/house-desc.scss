@@ -51,6 +51,7 @@
         font-size: 20px;
         line-height: 25px;
         margin-bottom: 45px;
+        font-family: 'NoahBold';
         
         img{
             margin-right: 19px;
@@ -222,6 +223,7 @@
                     display: inline-block;
                     min-width: 55px;
                     font-weight: bold;
+                    font-family: 'NoahBold';
                 }
             }
             div:first-child{
@@ -245,6 +247,7 @@
     }
     p{
         margin: 0;
+        line-height: 32px;
     }
 }
 

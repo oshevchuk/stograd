@@ -127,3 +127,18 @@ body{
 @import "partials/room.scss";
 @import "partials/news.scss";
 @import "partials/actions.scss";
+
+#modaal-close.modaal-close{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  &:before,
+  &:after{
+    width: 1px;
+    height: 26px;
+    background-color: #C4C4C4;
+    top: 12px;
+    left: 24px;
+  }
+}

@@ -33,9 +33,12 @@
   margin-bottom: 128px;
   .type1-gallery {
     margin: 40px 0;
-    .swiper-container .swiper-wrapper .swiper-slide{
-      min-height: 408px;
-      height: 408px;
+    .swiper-container .swiper-wrapper{ 
+      height: auto;
+      .swiper-slide{
+        min-height: 408px;
+        height: 408px;
+      }
     }
   }
   .date{
