@@ -62,7 +62,7 @@
       </div>
       <div class="plan">
         <span>Планування 9 поверху</span>
-        <a href="#">
+        <a href="#room-dialog_" class="room-dialog_">
           <img src="./img/image5.png" alt="">
         </a>
       </div>
@@ -136,6 +136,17 @@
   </div>
 </div>
 
+<div id="room-dialog_" style="display: none">
+  <div class="room-dialog">
+    <h4>Планування 9 поверху</h4>
+
+    <img src="./img/image-5.jpg" alt="">
+
+    <span><img src="./img/Rectangle2.svg" alt="">Ваша квартира</span>
+  </div>
+</div>
+
+
 @@include('./template/footer.html')
 
 </body>
@@ -146,6 +157,7 @@
 
   <script>
   $(".inline").modaal({width: 600});
+  $(".room-dialog_").modaal({width: 1000});
 
   var swiper = new Swiper('.sw-container', {
         navigation: {

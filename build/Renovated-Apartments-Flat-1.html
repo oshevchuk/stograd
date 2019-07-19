@@ -60,9 +60,34 @@
                 </ul>
             </li>
             <li><a href="./commercial.html">Комерційні площі</a></li>
-            <li><a href="./apparts.html">Квартири з ремонтом</a></li>
-            <li><a href="./action.html">Акції</a></li>
-            <li><a href="./about.html">Компанія <img src="./img/arrow-down.svg" alt=""></a></li>
+            <li><a href="./Renovated-Apartments.html">Квартири з ремонтом</a></li>
+            <li><a href="./promo.html">Акції</a></li>
+            <li>
+                <a href="./about.html">Компанія <img src="./img/arrow-down.svg" alt=""></a>
+                <ul>
+                    <li>
+                        <a href="./about.html">
+                            <div>
+                                Компанія
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./news.html">
+                            <div>
+                                Новини
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./video.html">
+                            <div>
+                                Відео
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
             <li><a href="./contacts.html">Контакти</a></li>
         </ul>
 
@@ -134,7 +159,7 @@
       </div>
       <div class="plan">
         <span>Планування 9 поверху</span>
-        <a href="#">
+        <a href="#room-dialog_" class="room-dialog_">
           <img src="./img/image5.png" alt="">
         </a>
       </div>
@@ -208,6 +233,17 @@
   </div>
 </div>
 
+<div id="room-dialog_" style="display: none">
+  <div class="room-dialog">
+    <h4>Планування 9 поверху</h4>
+
+    <img src="./img/image-5.jpg" alt="">
+
+    <span><img src="./img/Rectangle2.svg" alt="">Ваша квартира</span>
+  </div>
+</div>
+
+
 <div class="footer">
     <div class="container-fluid">
         <div class="container">
@@ -243,6 +279,7 @@
 
   <script>
   $(".inline").modaal({width: 600});
+  $(".room-dialog_").modaal({width: 1000});
 
   var swiper = new Swiper('.sw-container', {
         navigation: {

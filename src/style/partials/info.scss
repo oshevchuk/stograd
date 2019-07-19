@@ -121,6 +121,8 @@ select{
 }
 .table-info{
     margin-bottom: 128px;
+    border-top: 1px solid #EAEAEA;
+    margin-top: 24px;
 
     .row{
         display: flex;
@@ -129,6 +131,9 @@ select{
         padding: 18px 32px;
         border-bottom: 1px solid #EAEAEA;
 
+        &:hover{
+            background-color: #fff4e7;
+        }
         &.sale{
             font-size: 20px;
             line-height: 25px;

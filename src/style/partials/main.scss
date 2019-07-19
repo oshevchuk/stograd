@@ -163,7 +163,9 @@
 #map{
     min-block-size: 528px;
     width: 100%;
-    background-color: grey;
+    // background-color: grey;
+    background-image: url('../img/map.jpg');
+    background-size: cover;
 }
 
 .commercial{
@@ -426,4 +428,5 @@
     // height: 568px;
     max-height: 568px;
     object-fit: contain;
+    width: 100%;
 }
