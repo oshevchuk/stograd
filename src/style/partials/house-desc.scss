@@ -48,7 +48,7 @@
         background-color: #00914C;
         padding: 28px;
         color: white;
-        font-size: 28px;
+        font-size: 20px;
         line-height: 25px;
         margin-bottom: 45px;
         
@@ -76,8 +76,13 @@
                 line-height: 25px;
 
                 a{
+                    color: #00914C;
+                    font-size: 20px;
+                    display: inline-flex;
+                    align-items: center;
                     img{
-                        
+                        display: block;
+                        margin-left: 8px;                        
                     }
                 }
             }
