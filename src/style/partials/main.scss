@@ -98,7 +98,7 @@
             object-fit: cover;
         }
         h4{
-            margin-top: 21px;
+            margin-top: 15px;
             margin-bottom: 11px;
             font-size: 20px;
         }
@@ -433,4 +433,27 @@
     max-height: 568px;
     object-fit: contain;
     width: 100%;
+}
+
+.technical-info{
+    .head{
+        h3{
+            font-size: 32px;
+            line-height: 40px;
+            color: black;
+            margin-bottom: 8px;
+            margin-top: 0;
+        }
+        span{
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    .body{
+        p>b{
+            font-size: 20px;
+            line-height: 32px;
+            color: black;
+        }
+    }
 }
