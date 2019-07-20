@@ -436,7 +436,10 @@
 }
 
 .technical-info{
+    margin: 35px 79px;
     .head{
+        margin-bottom: 44px;
+
         h3{
             font-size: 32px;
             line-height: 40px;
@@ -454,6 +457,18 @@
             font-size: 20px;
             line-height: 32px;
             color: black;
+        }
+        p{
+            margin-bottom: 0;
+        }
+        .row{
+            .row{
+                margin: 24px 0;
+            }
+            div{
+                font-size: 14px;
+                line-height: 16px;
+            }
         }
     }
 }

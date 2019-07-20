@@ -88,6 +88,9 @@ body{
 .col-10{
   width: calc(83.33% - 16px);
 }
+.col-11{
+  width: calc(91.63% - 16px);
+}
 @import "ui.scss";
 
 // @media(max-width: 576px) {
