@@ -1,0 +1,143 @@
+@media only screen and (max-device-width: 1330px) {
+  .header .container{
+    padding: 0px 24px;
+
+    ul{
+      li{
+        a{
+          span.short{
+            display: initial;
+          }
+          span.full{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .container{
+    padding: 0px 56px;
+  }
+}
+
+@media only screen and (max-device-width: 1130px) {
+  h2{
+    font-size: 32px;
+    line-height: 32px;
+  }
+  h3{
+    font-size: 24px;
+    line-height: 32px;
+  }
+  // status
+  span.status{
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .content{
+    margin: 80px auto;
+  }
+  p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .header .container{
+    ul{
+      li{
+        a{
+          font-size: 12px;
+          line-height: 15px;
+          span{
+            font-size: 12px;
+            line-height: 15px;
+          }
+        }
+      }
+    }
+    .tel{
+      a{
+        font-size: 12px;
+        // line-height: 15px;
+      }
+      .overlay{
+        justify-content: space-between;
+
+        div, .phones{
+          font-size: 14px;
+          line-height: 24px;
+        }
+        
+      }
+    }
+  }
+// main
+  .main-image{
+    .container{
+      h1{
+        left: auto;
+      }
+    }
+  }
+  // projects
+  .projects{
+    margin-left: -16px;
+    margin-top: -22px;
+    .item{
+      max-width: calc(50% - 16px);
+      margin-left: 16px;
+      margin-top: 16px;
+      padding-bottom: 0;
+
+      img{
+        height: 320px;
+      }
+      h4{
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 8px;
+      }
+      p{
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+  // 10 years block
+  .info{
+    .num-banner-zone{
+      .num-baner{
+        max-width: 151px;
+        span{
+          font-size: 56px;
+          line-height: 88px;
+        }
+        p{
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+    h3{
+
+    }
+    p{
+
+    }
+    a{
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }  
+  .container.map{
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    h2{
+      padding: 0 56px;
+    }
+  }
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1330px) {
+}

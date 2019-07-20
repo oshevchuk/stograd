@@ -90,29 +90,29 @@ body{
 }
 @import "ui.scss";
 
-@media(max-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
+// @media(max-width: 576px) {
+//   .container {
+//     max-width: 540px;
+//   }
+// }
 
-@media(max-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
+// @media(max-width: 768px) {
+//   .container {
+//     max-width: 720px;
+//   }
+// }
 
-@media(max-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
+// @media(max-width: 992px) {
+//   .container {
+//     max-width: 960px;
+//   }
+// }
 
-@media(max-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
+// @media(max-width: 1200px) {
+//   .container {
+//     max-width: 1140px;
+//   }
+// }
 
 .left-col{
   width: 240px;
@@ -142,3 +142,5 @@ body{
     left: 24px;
   }
 }
+
+@import "responsive-tablet.scss";

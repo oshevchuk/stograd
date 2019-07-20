@@ -42,6 +42,14 @@
                     display: inline-flex;
                     align-items: center;
 
+                    span.short{
+                        display: none;
+                    }
+                    span{
+                        font-size: 17px;
+                        line-height: 21px;
+                        font-family: 'NoahBold';
+                    }
                     img{
                         padding-left: 12px;
                     }
