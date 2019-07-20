@@ -173,7 +173,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
+    .row{
+        align-items: flex-end;
+    }
     &>a{
         display: flex;
         flex-direction: column;
@@ -245,6 +247,7 @@
             b{
                 line-height: 32px;
                 color: #101010;
+                font-size: 16px;
             }
         }
     }
