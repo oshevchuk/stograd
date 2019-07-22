@@ -1,0 +1,153 @@
+@media screen and (max-width: 767px) {
+  .header{
+    min-height: auto;
+
+    .container{
+      padding: 0;
+      margin: 0;
+    
+      &>ul{
+        display: none;
+      }
+      .menu-opener{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+      }
+      .logo{
+        width: 40%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid #E9E9E9;
+        border-right: 1px solid #E9E9E9;
+      }
+      .tel{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        a{
+          &:after{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  h1{
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .container{
+    padding: 0 24px;
+  }
+  .main-image{
+    min-height: auto;
+    img{
+      height: 384px;
+    }
+    h1{
+      top: 95px;
+    }
+  }
+  // 
+  .main{
+    .container{
+      .large-card{
+        margin: 32px 0;
+      }
+    }
+    .banners{
+      margin-bottom: 64px;
+    }
+  }
+  // 
+  h2{
+    font-size: 24px;
+    line-height: 32px;
+    margin: 16px 0;
+  }
+  // 
+  .projects{
+    flex-direction: column;
+    margin: 0;
+
+    .item{
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      margin-bottom: 24px;
+
+      img{
+        height: 272px;
+      }
+    }
+  }
+  // 
+  h3{
+    font-size: 20px;
+    line-height: 28px;
+  }
+  p{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  // 
+  .info{
+    &>.row{
+      flex-direction: column;
+      &>div{
+        width: 100%;
+      }
+    }
+    .col-1{
+      display: none;
+    }
+    .num-banner-zone{
+      max-width: 100%;
+      flex-direction: row;
+      .num-baner{
+        margin-bottom: 20px;
+      }
+    }
+    p{
+      margin: 22px 0;
+    }
+  }
+  // 
+  .container.map{
+    h2{
+      padding: 0 24px;
+    }
+    #map{
+      height: 464px;
+    }
+  }
+  // 
+
+  .footer{
+    padding: 0 24px;
+
+    .container-fluid .container{
+      padding-top: 10px;
+
+      .row{
+        flex-direction: column;
+
+        &>div{
+          width: 100%;
+        }
+        .social{
+          width: 100%;
+          justify-content: space-between;
+          margin-top: 24px;
+
+          li{
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
