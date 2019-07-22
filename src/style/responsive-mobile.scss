@@ -67,6 +67,11 @@
     font-size: 24px;
     line-height: 32px;
     margin: 16px 0;
+    &.biggest{
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 22px;
+    }
   }
   // 
   .projects{
@@ -148,6 +153,70 @@
           }
         }
       }
+    }
+  }
+  // 
+  .main{
+    .toggler{
+      margin-bottom: 28px;
+    }
+  }
+  .house-description{
+    .content_{
+      .short-info{
+        &>div{
+          min-width: 0;
+          span{
+            font-size: 12px;
+          }
+          h3{
+            font-size: 18px;
+            margin-bottom: 18px;
+          }
+        }
+      }
+    }
+    .short-info{
+      // flex-direction: column;
+    }
+    a.show-info{
+      font-size: 16px;
+      line-height: 20px;
+      padding: 15px;
+    }
+    .description{
+      .row{
+        .name, .value{
+          font-size: 16px;
+          line-height: 20px;
+
+          a{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  // 
+  .type1-gallery .swiper-container .swiper-button-next{
+    width: 28px;
+    height: 28px;
+    img{
+      width: 6px;
+    }
+  }
+  .type1-gallery .swiper-container .swiper-button-prev{
+    width: 28px;
+    right: 28px;
+    height: 28px;
+    img{
+      width: 6px;
+    }    
+  }
+  .type1-gallery .swiper-container .swiper-wrapper{
+    height: 151px;
+    .swiper-slide{
+      min-height: 0;
     }
   }
 }
