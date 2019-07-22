@@ -88,17 +88,26 @@
     }
   }
   .header .container{
+    .logo{
+      img{
+        width: 60px;
+      }
+    }
     ul{
       li{
         a{
           font-size: 12px;
           line-height: 15px;
+          padding: 5px 10px;
           span{
             font-size: 12px;
             line-height: 15px;
           }
         }
       }
+    }
+    &>ul>li>a>img{
+      display: none;
     }
     .tel{
       a{
@@ -460,6 +469,111 @@
   // 
   .based{
     margin-top: 40px;
+
+    &>div.col-1{
+      display: none;
+    }
+    &>div.col-7{
+      width: calc(66.6% - 8px);
+    }
+  }
+  // 
+  a.btn{
+    font-size: 16px;
+    line-height: 20px;
+    min-height: 56px;
+  }
+  // 
+  .apparts{
+    a{
+      img{
+        height: 232px;
+        min-height: auto;
+      }
+      span{
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+  // 
+  .commercial{
+    a{
+      width: calc(50% - 8px);
+      .row{
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+  // 
+  .full-tablet{
+    width: 100%;
+    .desc{
+      width: 100%;
+      max-width: 570px;
+    }
+  }
+  .colum-tablet{
+    flex-direction: column;
+    &>div{
+      width: 100%;
+    }
+    
+  }
+  .tech-title{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    h4{
+      font-size: 16px;
+      line-height: 20px;
+    }
+    span.price{
+      margin-left: 50px;
+      display: inline-block;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  // 
+  .videos{
+    .item{
+      .video{
+        height: 180px;
+        min-height: auto;
+        img{
+          height: 180px;
+        }
+      }
+    }
+  }
+  // 
+  .contacts{
+    flex-wrap: wrap;
+    
+    &>div, &>.col-4{
+      width: 50%;
+      margin-bottom: 80px;
+    }
+    .contact{
+      p{
+        font-size: 14px;
+        line-height: 17px;
+
+        b{
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+  // 
+  .text-banner{
+    height: 232px;
+    &:before{
+      background-position-x: -115px;
+    }
   }
   //
 }
