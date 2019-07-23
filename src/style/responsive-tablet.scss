@@ -18,6 +18,11 @@
   .container{
     padding: 0px 56px;
   }
+  .footer{
+    .container-fluid .container{
+      padding: 42px 24px;
+    }
+  }
 }
 
 @media screen and (max-width: 1130px) {
@@ -75,6 +80,10 @@
   }
   .col-11{
     width: calc(91.63% - 8px);
+  }
+  .custom-select{
+    min-width: 140px;
+    margin-right: 8px;
   }
   .bread-crmp{
     margin-bottom: 14px;
@@ -144,7 +153,8 @@
       padding-bottom: 0;
 
       img{
-        height: 320px;
+        height: auto;
+        object-fit: contain;
       }
       h4{
         font-size: 16px;
@@ -224,10 +234,12 @@
   }
 
   .type1-gallery .swiper-container .swiper-wrapper {
-    height: 304px;
+    height: auto;
     .swiper-slide{
-      min-height: 304px;
-      
+      min-height: auto;
+      img{
+        object-fit: contain;
+      }
     }
   }
 
@@ -310,7 +322,7 @@
   // 
   .gallery {
     .gallery-top{
-      height: 308px;
+      height: auto;
     }
     .swiper-wrapper{
       // height: 308px;
@@ -318,6 +330,9 @@
         // height: 308px;
         img{
           // height: 308px;
+          object-fit: contain;
+          max-height: 100%;
+          height: auto;
         }
       }
     }
@@ -391,12 +406,27 @@
   }
   .room-info{
     flex-direction: column-reverse;
+    display: flex;
 
     &>div{
       width: 100%;
     }
     .col-4{
-      width: 40%;
+      // width: 40%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .info-banner{
+        width: 55%;
+      }
+      .actions{
+        width: 45%;
+      }
+      .plan{
+        width: 100%;
+      }
     }
     .type1-gallery .swiper-container .swiper-wrapper{
       height: auto;
@@ -576,6 +606,37 @@
     }
   }
   //
+  .modaal-outer-wrapper{
+    .modaal-inner-wrapper{
+      padding: 10px;
+
+      .modaal-content-container{
+        padding: 10px;
+
+        .technical-info{
+          margin: 10px;
+
+          .head{
+            margin-bottom: 20px;
+
+            h3{
+              margin: 0;
+            }
+          }
+          .body{
+            &>.row{
+              &>.col-1{
+                display: none;
+              }
+              &>.col-5{
+                width: calc(50% - 8px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 

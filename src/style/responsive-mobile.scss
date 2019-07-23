@@ -281,6 +281,10 @@
   .lorem{
     flex-direction: column;
 
+    h3{
+      line-height: 28px;
+      margin-bottom: 12px;
+    }
     &>div{
       width: 100%;
     }
@@ -334,6 +338,7 @@
     .custom-select{
       width: 100%;
       margin-bottom: 16px;
+      
     }
     a{
       padding: 10px;
@@ -361,8 +366,9 @@
         display: flex;
         flex-wrap: wrap;
         &>div{
+          min-width: 80px;
           margin: 4px 0;
-          margin-right: 10px;
+          margin-right: 5px;
         }
       }
     }
@@ -408,6 +414,12 @@
 
     &>.col-4{
       width: 100%;
+      .info-banner{
+        width: 100%;
+      }
+      .actions{
+        width: 100%;
+      }
     }
     .plan{
       span{
@@ -647,4 +659,55 @@
       }
     }
   }
+  // 
+
+  .modaal-outer-wrapper{
+    .modaal-inner-wrapper{
+      padding: 2px;
+
+      .modaal-content-container{
+        padding: 10px;
+
+        .technical-info{
+          margin: 10px;
+
+          .head{
+            margin-bottom: 20px;
+
+            h3{
+              font-size: 20px;
+              line-height: 28px;
+            }
+            span{
+              font-size: 12px;
+            }
+          }
+          .body{
+            b{
+              font-size: 16px;
+            }
+            p{
+              margin-top: 8px;
+            }
+            &>.row{
+              flex-direction: column;
+
+              .row{
+                margin: 8px 0;
+                flex-direction: column;
+
+                &>div{
+                  width: 100%;
+                }
+              }
+              &>.col-5{
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
