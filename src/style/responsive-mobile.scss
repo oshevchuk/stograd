@@ -56,6 +56,10 @@
     .container{
       .large-card{
         margin: 32px 0;
+
+        img{
+          object-fit: contain;
+        }
       }
     }
     .banners{
@@ -85,7 +89,9 @@
       margin-bottom: 24px;
 
       img{
-        height: 272px;
+        height: auto;
+        width: 100%;
+        object-fit: contain;
       }
     }
   }
@@ -145,11 +151,13 @@
         }
         .social{
           width: 100%;
-          justify-content: space-between;
+          // justify-content: space-between;
           margin-top: 24px;
+          flex-wrap: wrap;
 
           li{
             margin: 0;
+            margin-right: 15px;
           }
         }
       }
@@ -232,6 +240,8 @@
       img{
         width: 100%;
         margin-top: 28px;
+        height: auto;
+        object-fit: contain;
       }
     }
     &>div:nth-child(2){
@@ -301,7 +311,10 @@
   // 
   .photos{
     img{
-      height: 152px;
+      // height: 152px;
+      height: auto;
+      width: 100%;
+      object-fit: contain;
     }
   }
   // 
@@ -459,6 +472,12 @@
 
     a{
       width: 100%;
+
+      &>img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
     }
   }
   // 
@@ -470,6 +489,9 @@
       margin-bottom: 28px;
       img{
         margin-bottom: 14px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
       }
     }
   }
@@ -479,6 +501,11 @@
 
     .item{
       width: 100%;
+
+      img{
+        height: auto;
+        object-fit: contain;
+      }
     }
   }
   // 
@@ -489,11 +516,12 @@
       width: 100%;
       display: flex;
       margin-bottom: 24px;
+      align-items: flex-start;
 
       &>img{
         width: 100px;
-        height: 76px;
-        object-fit: cover;
+        height: auto;
+        object-fit: contain;
         display: block;
         margin-right: 16px;
       }
@@ -541,8 +569,11 @@
   .header{
     position: relative;
 
-    input[type="checkbox"]:checked{
-      &~.menu-close{
+    .open-menu{
+      .menu-opener{
+        display: none;
+      }
+      .menu-close{
         display: flex;
         position: absolute;
         top: 0;
@@ -550,17 +581,18 @@
         width: 100%;
         padding: 15px;
         background-color: white;
-        height: 50px;
+        height: 70px;
         z-index: 1001;
         font-size: 16px;
         padding-left: 40px;
+        padding-bottom: 35px;
 
         img{
           display: inline-block;
           margin-right: 8px;
         }
       }
-      &~ul{
+      ul{
         display: block;
         position: absolute;
         top: 70px;
