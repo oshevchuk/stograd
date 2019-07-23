@@ -247,13 +247,16 @@
       img{
         width: 100%;
         margin-top: 28px;
-        height: auto;
-        object-fit: contain;
+        height: 480px;
+        object-fit: cover;
       }
     }
     &>div:nth-child(2){
       display: none;
     }
+    // .ip{
+    //   height: 480px;
+    // }
   }
   // 
   .infrastructure .objects .row {
