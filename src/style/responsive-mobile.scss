@@ -441,4 +441,100 @@
     padding-left: 0;
   }
   // 
+  .based{
+    margin-top: -16px;
+    flex-direction: column-reverse;
+
+    &>div, &>div.col-7{
+      width: 100%;
+
+      a{
+        margin-bottom: 30px;
+      }
+    }
+  }
+  // 
+  .apparts{
+    flex-direction: column;
+
+    a{
+      width: 100%;
+    }
+  }
+  // 
+  .commercial{
+    flex-direction: column;
+
+    a{
+      width: 100%;
+      margin-bottom: 28px;
+      img{
+        margin-bottom: 14px;
+      }
+    }
+  }
+  // 
+  .videos{
+    flex-direction: column;
+
+    .item{
+      width: 100%;
+    }
+  }
+  // 
+  .contacts{
+    flex-direction: column;
+
+    &>div.col-4{
+      width: 100%;
+      display: flex;
+      margin-bottom: 24px;
+
+      &>img{
+        width: 100px;
+        height: 76px;
+        object-fit: cover;
+        display: block;
+        margin-right: 16px;
+      }
+      .contact{
+        p{
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  // 
+  .text-banner{
+    height: 120px;
+    padding: 10px;
+
+    h3{
+      font-size: 15px;
+      line-height: 20px;
+      margin-left: 80px;
+    }
+    &:before{
+      background-position-x: -200px; 
+      height: 140px;
+      width: 200px;
+    }
+  }
+  // 
+  .row.mobile{
+    flex-direction: column;
+    &>p{
+      width: 100%;
+      margin: 6px 0;
+    }
+  }
+  // 
+  .comfort{
+    flex-direction: column;
+    .item{
+      width: 100%;
+      margin: 30px 0;
+    }
+  }
+  // 
 }
