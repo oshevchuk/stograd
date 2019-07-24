@@ -275,7 +275,7 @@
   }
   // 
   .content{
-    margin: 64px 0;
+    margin: 48px 0;
   }
   // 
   .lorem{
@@ -309,7 +309,10 @@
     height: auto;
   }
   .gallery .gallery-thumbs{
-    height: 40px;
+    height: auto;
+  }
+  .gallery .gallery-top{
+    margin-bottom: auto;
   }
   // 
   .block{
