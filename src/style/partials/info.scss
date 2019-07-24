@@ -133,6 +133,13 @@ select{
         padding: 18px 32px;
         border-bottom: 1px solid #EAEAEA;
 
+        .row{
+            &>div{
+                min-width: 105px;
+                text-align: left;
+            }
+        }
+
         &:hover{
             background-color: #fff4e7;
         }
