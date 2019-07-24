@@ -7,7 +7,12 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./font/Noah/style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 </head>
 <body>
 
@@ -128,7 +133,7 @@
 </div>
 
 <!-- code -->
-<div class="container content info">
+<div class="container content info" data-aos="fade-right">
     <div class="row space-between">
         <div class="col-4">
             <div class="num-banner-zone">
@@ -152,14 +157,14 @@
     </div>
 </div>
 
-<div class="container content">
+<div class="container content" data-aos="zoom-in">
   <!--<img src="./img/quote.jpg" alt="" class="large-image">-->
   <div class="text-banner">
     <h3>Стоград — надійний забудовник, який відзначається високою якістю будівництва!</h3>
   </div>
 </div>
 
-<div class="container">
+<div class="container" data-aos="fade-right">
   <h2>Про будівництво</h2>
   <div class="row space-between mobile">
     <p class="col-6">
@@ -171,20 +176,20 @@
   </div>
 </div>
 
-<div class="container content map">
+<div class="container content map" data-aos="fade-right">
     <h2>Наші проекти на мапі</h2>
     <div id="map">
     </div>
 </div>
 
-<div class="container content">
+<div class="container content" data-aos="zoom-in">
   <!--<img src="./img/quote2.jpg" alt="" class="large-image">-->
   <div class="text-banner">
-    <h3>Обираючи житло від групи компаній “Стоград”, ви можете бути впевнені у його якості! </h3>
+    <h3>Обираючи житло від групи компаній “Стоград”, ви можете бути впeвнені у його якості! </h3>
   </div>
 </div>
 
-<div class="container content">
+<div class="container content" data-aos="fade-right">
   <h2> Ми дбаємо про комфорт</h2>
   <div class="row space-between mobile">
     <p class="col-6">
@@ -196,7 +201,7 @@
   </div>
 </div>
 
-<div class="container content comfort">
+<div class="container content comfort" data-aos="fade-right">
   <div class="item">
     <div>
       <div class="col-2">
@@ -246,7 +251,7 @@
   </div>
 </div>
 
-<div class="container content">
+<div class="container content"  data-aos="fade-right">
   <h2>Ми пропонуємо</h2>
   <div class="row space-between mobile">
     <p class="col-6">
@@ -258,7 +263,7 @@
   </div>
 </div>
 
-<div class="container content">
+<div class="container content"  data-aos="fade-right">
   <h2>Наші партнери</h2>
   <img src="./img/image7.png" alt="" class="large-image">
 </div>
@@ -298,6 +303,11 @@
         $('.header .container').toggleClass('open-menu');
     });
 </script>
+
+  
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 
