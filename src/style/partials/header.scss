@@ -1,11 +1,14 @@
 .header{  
+    position: fixed;
+    
     width: 100%;
     min-height: 64px;
     background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    // position: relative;
+    top: 0;
     z-index: 100;
     border-bottom: 1px solid #E9E9E9;
 

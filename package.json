@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "3": "^2.1.0",
     "aos": "^2.3.4"
   },
   "devDependencies": {

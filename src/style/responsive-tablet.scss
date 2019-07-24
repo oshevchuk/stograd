@@ -19,8 +19,11 @@
     padding: 0px 56px;
   }
   .footer{
+    padding: 0px 56px;
     .container-fluid .container{
-      padding: 42px 24px;
+      // padding: 42px 24px;
+      // padding-left: 56px;
+      // padding-right: 56px;/
     }
   }
 }
@@ -194,11 +197,11 @@
     }
   }  
   .container.map{
-    padding: 0;
+    // padding: 0;
     width: 100%;
     max-width: 100%;
     h2{
-      padding: 0 56px;
+      // padding: 0 56px;
     }
   }
   .main{
