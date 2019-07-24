@@ -149,3 +149,10 @@ body{
 
 @import "responsive-tablet.scss";
 @import "responsive-mobile.scss";
+
+.container[data-aos=zoom-in]{
+  transform: scale(.9);
+}
+[data-aos^=zoom][data-aos^=zoom].aos-animate{
+
+}
