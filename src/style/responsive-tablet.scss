@@ -26,9 +26,41 @@
       // padding-right: 56px;/
     }
   }
+  .info{
+    .col-4{
+      // width: 18%;
+    }
+    .col-1{
+      display: none;
+    }
+    .col-7{
+      width: 100%;
+    }
+    .num-banner-zone .num-baner{
+      margin-bottom: 70px;
+    }
+  }
+  .toggler label{
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .next-house{
+    &>.row{
+      flex-direction: column;
+
+      &>div{
+        width: 100%;
+      }
+    }
+
+    .techical-description{
+      max-width: 400px;
+    }
+  }
 }
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1140px) {
   h2{
     font-size: 32px;
     line-height: 32px;
@@ -174,6 +206,7 @@
   .info{
     .num-banner-zone{
       .num-baner{
+        margin-bottom: 10px;
         max-width: 151px;
         span{
           font-size: 56px;
@@ -557,6 +590,7 @@
     }
     
   }
+  
   .tech-title{
     display: flex;
     align-items: center;
@@ -588,9 +622,11 @@
   .contacts{
     flex-wrap: wrap;
     
-    &>div, &>.col-4{
-      width: 50%;
+    &>div, &>.col-3{
+      // width: 50%;
+      width: 210px;
       margin-bottom: 80px;
+      margin-right: 50px;
     }
     .contact{
       p{

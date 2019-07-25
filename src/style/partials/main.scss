@@ -171,35 +171,30 @@
     .target{
         img{
 
-        }
-        .desc{
-            background-color: #00914C;
-            box-shadow: 0px 8px 16px rgba(42, 54, 62, 0.08);
-            padding: 20px;
-            width: 208px;
+        }        
+    }
+    .desc{
+        background: #FFFFFF;
+        box-shadow: 0px 8px 16px rgba(42, 54, 62, 0.08);
+        width: 176px;
 
+        img{
+            width: 100%;
+            height: 176px;
+            display: block;
+            object-fit: cover;
+        }
+        &>div{
+            padding: 6px 16px;
             *{
-                font-size: 14px;
+                font-size: 12px;
                 line-height: 15px;
-                color: white;
             }
             p{
-                margin-bottom: 20px;
-                margin-top: 5px;
+                margin: 8px 0;
             }
-            .row{
-                margin: 9px 0;
-                align-items: center;
-                color: white;
-                b{
+            span{
 
-                }
-                sup{
-                    font-size: 8px;
-                }
-            }
-            .price{
-                margin-top: 25px;
             }
         }
     }
@@ -504,6 +499,95 @@
             div{
                 font-size: 14px;
                 line-height: 16px;
+            }
+        }
+    }
+}
+
+.plan-wrap{
+    position: relative;
+    .sale{
+        top: 25%;
+        left: 12%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 104px;
+        height: 32px;
+
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        b{
+            color: white;
+            position: relative;
+            z-index: 1;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    .desc{
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        background-color: #00914C;
+        box-shadow: 0px 8px 16px rgba(42, 54, 62, 0.08);
+        padding: 20px;
+        width: 208px;
+
+        *{
+            font-size: 14px;
+            line-height: 15px;
+            color: white;
+        }
+        p{
+            margin-bottom: 20px;
+            margin-top: 5px;
+        }
+        .row{
+            margin: 9px 0;
+            align-items: center;
+            color: white;
+            b{
+
+            }
+            sup{
+                font-size: 8px;
+            }
+        }
+        .price{
+            margin-top: 25px;
+        }
+    }
+}
+
+.com-house{
+    flex-direction: column;
+
+    .tech-title{
+        display: flex;
+        align-items: center;
+
+        span.price{
+            color: #FF910D;
+            display: block;
+            margin-left: 10%;
+        }
+    }
+}
+
+.next-house{
+    .techical-description{
+        flex-direction: column;
+        div.row{
+            align-items: baseline;
+            span.price{
+                color: #FF910D;
             }
         }
     }

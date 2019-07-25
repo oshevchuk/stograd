@@ -138,6 +138,10 @@ select{
                 min-width: 105px;
                 text-align: left;
             }
+            &>div:last-child{
+                text-align: right;
+                min-width: auto;
+            }
         }
 
         &:hover{

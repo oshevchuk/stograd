@@ -31,6 +31,9 @@
 
 .news-article{
   margin-bottom: 128px;
+  &>div{
+    margin: auto;
+  }
   .type1-gallery {
     margin: 40px 0;
     .swiper-container .swiper-wrapper{ 
