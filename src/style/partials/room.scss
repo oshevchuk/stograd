@@ -67,10 +67,23 @@
       img{
         display: inline-block;
         margin-right: 16px;
+        &.hover{
+          display: none;
+        }
       }
       &.btn{
         background-color: #00914C;
         color: white;
+      }
+      &:hover{
+        background-color: #00B15D;
+        color: white;
+        img{
+          display: none;
+          &.hover{
+            display: block;
+          }
+        }
       }
     }
   }

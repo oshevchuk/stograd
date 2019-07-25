@@ -156,12 +156,16 @@ a.btn{
     align-items: center;
     padding: 20px 30px;    
     font-family: 'NoahBold';
+    transition: 0.2s;
     &.grey{
         background-color: #F6F6F6;
         color: #252525;
         padding: 14px 43px;
         font-size: 16px;
         line-height: 22px;
+    }
+    &:hover{
+        background-color: #00B15D;
     }
 }
 

@@ -37,6 +37,11 @@
             display: inline-block;
             border-bottom: 1px dashed black;
             margin-top: 12px;
+
+            &:hover, &:hover b{
+                color: #00914C;
+                border-bottom: 1px dashed #00914C;
+            }
         }
     }
     a.show-info{
@@ -52,9 +57,13 @@
         line-height: 25px;
         margin-bottom: 45px;
         font-family: 'NoahBold';
+        transition: 0.2s;
         
         img{
             margin-right: 19px;
+        }
+        &:hover{
+            background-color: #00B15D;
         }
     }
     .description{
