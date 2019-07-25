@@ -486,7 +486,7 @@
     padding: 0;
   }
   // 
-  .news-article .comment p{
+  .news-article .comment p, .news-article p a{
     font-size: 14px;
   }
   .comment{
@@ -730,5 +730,9 @@
       }
     }
   }
-
+  // 
+  .news-article .g1.type1-gallery .swiper-container .swiper-wrapper .swiper-slide{
+    height: auto;
+  }
+// 
 }
