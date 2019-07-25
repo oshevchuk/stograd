@@ -20,6 +20,10 @@
         font-size: 16px;
         transition: 0.2s;
 
+        &.col-3{
+            width: 100%;
+        }
+
         img{
             padding-right: 16px;
             &.hover{
@@ -28,6 +32,7 @@
         }
         &:hover{
             background-color: #00B15D;
+            border: 1px solid #00B15D;
             color: white;
             img{
                 display: none;

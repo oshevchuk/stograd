@@ -77,6 +77,7 @@
       }
       &:hover{
         background-color: #00B15D;
+        border: 1px solid #00B15D;
         color: white;
         img{
           display: none;
@@ -87,7 +88,9 @@
       }
     }
   }
-  .plan{
+  .plan_{
+    display: flex;
+    flex-direction: column;
     margin: 20px 0;
     span{
       font-size: 16px;
@@ -102,6 +105,7 @@
       img{
 
       }
+      
     }
   }
 }
