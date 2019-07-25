@@ -51,11 +51,28 @@
 
       &>div{
         width: 100%;
+
+        img{
+          width: 100%;
+        }
       }
     }
 
     .techical-description{
-      max-width: 400px;
+      // max-width: 400px;
+      .price{
+        margin-left: 10%;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li{
+          width: calc(50% - 8px);          
+        }
+      }
     }
   }
 }
@@ -466,6 +483,7 @@
       }
       .plan{
         width: 100%;
+        
       }
     }
     .type1-gallery .swiper-container .swiper-wrapper{
@@ -680,6 +698,11 @@
       }
     }
   }
+  // 
+  .link{
+    min-width: 290px;
+  }
+  // 
 }
 
 

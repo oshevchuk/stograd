@@ -354,7 +354,12 @@
     }
     a{
       padding: 10px;
+
+      &.col-3{
+          width: 100%;
+      }
     }
+    
   }
   // 
   .table-caption{
