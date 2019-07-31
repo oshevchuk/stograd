@@ -75,6 +75,9 @@
       }
     }
   }
+  .no-tablet{
+    display: none!important;
+  }
 }
 
 @media screen and (max-width: 1140px) {
@@ -94,6 +97,9 @@
   span.status{
     font-size: 14px;
     line-height: 17px;
+    &:before{
+      top: -1px!important;
+    }
   }
   .content{
     margin: 80px auto;
