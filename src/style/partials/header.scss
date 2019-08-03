@@ -69,6 +69,12 @@
                     display: inline-flex;
                     align-items: center;
 
+                    &.show-mobile{
+                        display: none;
+                        & + img{
+                            display: none;
+                        }
+                    }
                     span.short{
                         display: none;
                     }
@@ -154,9 +160,9 @@
                 position: absolute;
                 padding: 24px 42px;
                 background-color: white;
-                width: 320px;
+                width: 340px;
                 top: -20px;
-                right: 0px;
+                right: -20px;
                 display: flex;
                 font-size: 14px;
                 line-height: 24px;
@@ -170,9 +176,32 @@
                     line-height: 24px;
                     margin-bottom: 0;
                 }
+                &:after{
+                    content:  '';
+                    background-image: url('../img/arrow-down.svg');
+                    display: block;
+                    background-image: url('../img/arrow-down.svg');
+                    background-repeat: no-repeat;
+                    width: 6px;
+                    height: 3px;
+                    transform: rotate(180deg);
+                    position: absolute;
+                    top: 30px;
+                    right: 20px;
+                    
+                }
             }
-            &:hover .overlay{
-                display: flex;
+            &:hover {
+                // a{
+                //     font-size: 0;
+                //     position: absolute;
+                //     top: 0;
+                //     right: 0;
+                //     z-index: 1001;
+                // }
+                .overlay{
+                    display: flex;
+                }
             }
         }
     }
