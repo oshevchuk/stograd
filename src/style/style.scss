@@ -124,6 +124,9 @@ body{
 .left-col{
   width: 240px;
 }
+.show-mobile{
+  display: none;
+}
 
 @import "partials/header.scss";
 @import "partials/footer.scss";
