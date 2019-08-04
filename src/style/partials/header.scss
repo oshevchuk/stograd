@@ -40,6 +40,13 @@
                 margin-right: 8px;
             }
         }
+        .compaty-togler{
+            position: absolute;
+            opacity: 0;
+            display: block;
+            width: 0;
+            height: 0;
+        }
 
         .logo{
             img{
@@ -134,6 +141,7 @@
         }
         .tel{
             position: relative;
+            margin-bottom: 1px;
 
             a{
                 text-decoration: none;
