@@ -153,6 +153,8 @@ body{
   }
 }
 
+
+
 @import "responsive-tablet.scss";
 @import "responsive-mobile.scss";
 
@@ -161,4 +163,22 @@ body{
 }
 [data-aos^=zoom][data-aos^=zoom].aos-animate{
 
+}
+
+
+.te-mod{
+  .modaal-outer-wrapper{
+    display: flex;
+    align-items: flex-start;
+    
+  }
+  
+  .modaal-inner-wrapper{
+    display: block;
+    padding: 0;
+    text-align: left;
+  }
+  .modaal-container{
+    margin-left: 0;
+  }
 }
