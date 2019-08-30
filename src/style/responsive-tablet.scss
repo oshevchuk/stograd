@@ -307,6 +307,11 @@
       }
     }
   }
+  .col-info-type2{
+    &>div{
+      width: calc(50% - 16px);
+    }
+  }
 
   .column-info{
     position: relative;

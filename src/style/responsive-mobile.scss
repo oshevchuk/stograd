@@ -253,6 +253,28 @@
       min-height: 0;
     }
   }
+  .col-info-type2{
+    flex-direction: column-reverse;
+    &>div{
+      width: 100%;
+      height: auto;
+
+      h2{
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      img{
+        width: 100%;
+        margin-top: 28px;
+        height: 480px;
+        object-fit: cover;
+      }
+    }
+    &.reverse{
+      flex-direction: column-reverse;
+    }
+  }
   // 
   .column-info, .column-info.reverse{
     display: block;
