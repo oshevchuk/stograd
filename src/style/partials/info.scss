@@ -70,6 +70,9 @@ select{
     a{
         border: 1px solid #D0D0D0;
         color: black;
+        font-size: 16px;
+        // font-weight: 500;
+        font-family: 'Noah';
         &:hover{
             background-color: #D0D0D0;
             border-color: #D0D0D0;
@@ -93,6 +96,12 @@ select{
         li:not(:first-child){
             a{
                 border-top: none;
+                min-height: 40px;
+            }
+        }
+        li{
+            a{
+                // min-height: auto;
             }
         }
     }
