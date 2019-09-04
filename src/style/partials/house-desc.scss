@@ -29,6 +29,7 @@
         }
         p{
             margin: 10px 0;
+            line-height: 32px;
         }
         a.tech-info{
             font-size: 16px;
@@ -100,6 +101,9 @@
     }
 }
 
+.f p {
+    line-height: 32px;
+}
 
 .type1-gallery{
     // margin-top: 122px;

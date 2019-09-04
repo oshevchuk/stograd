@@ -150,12 +150,21 @@
         line-height: 25px;
         display: flex;
         align-items: center;
-        img{
+        .imgs{
             display: block;
             margin-left: 5px;
+
+            &:hover{
+                fill: #00914C;
+            }
         }
         &:hover{
             color: #00914C;
+            .imgs{
+                path{
+                    fill: #00914C;
+                }
+            }
         }
     }
 }
