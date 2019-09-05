@@ -67,12 +67,19 @@ select{
 
 .floor-select{
     position: relative;
+    min-width: 150px;
+    margin-right: 10px;
+
     a{
         border: 1px solid #D0D0D0;
         color: black;
         font-size: 16px;
         // font-weight: 500;
         font-family: 'Noah';
+        text-align: left;
+        justify-content: flex-start;
+        position: relative;
+
         &:hover{
             background-color: #D0D0D0;
             border-color: #D0D0D0;
@@ -81,6 +88,18 @@ select{
     }
     &>a{
         color: black;
+        &:after{
+            content: '';
+            background-image: url('../img/11.svg');
+            background-repeat: no-repeat;
+            display: block;
+            width: 10px;
+            height: 5px;
+            background-size: contain;
+            // background: red;
+            position: absolute;
+            right: 16px;
+        }
     }
     ul{
         list-style: none;
@@ -93,6 +112,22 @@ select{
         left: 0;
         top: 0;
         width: 100%;
+        li:first-child{
+            &:after{
+                content: '';
+                background-image: url('../img/11.svg');
+                background-repeat: no-repeat;
+                display: block;
+                width: 10px;
+                height: 5px;
+                background-size: contain;
+                // background: red;
+                position: absolute;
+                right: 16px;
+                top: 30px;
+                transform: scaleY(-1);
+            }
+        }
         li:not(:first-child){
             a{
                 border-top: none;
@@ -102,11 +137,17 @@ select{
         li{
             a{
                 // min-height: auto;
+                
             }
         }
     }
-    &:hover ul{
-        display: block;
+    &:hover{
+        &>a{
+
+        }
+        ul{
+            display: block;
+        }
     }
 }
 
