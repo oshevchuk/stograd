@@ -379,6 +379,10 @@
         position: absolute;
         bottom: 23px;
         right: 26px;
+        // width: 105px;
+        &>span{
+            // width: 85px;
+        }
 
         img{
             display: inline-block;
@@ -388,11 +392,15 @@
         .on-map{
             color: white;
             font-size: 16px;
+            align-items: center;
+            line-height: 16px;
         }
         .on-image{
             color: white;
             display: none;
             font-size: 16px;
+            align-items: center;
+            line-height: 16px;
         }
     }
     #map{
