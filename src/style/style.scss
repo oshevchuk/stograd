@@ -180,6 +180,10 @@ body{
   }
   .modaal-container{
     margin-left: 0;
+
+    position: relative;
+    height: auto;
+    min-height: 100vh;
   }
 }
 

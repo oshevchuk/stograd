@@ -13,6 +13,22 @@
     padding-top: 40px;
     padding-bottom: 320px;
   }
+  .call-show{
+    h4{
+      margin-top: 16px;
+    }
+    .row{
+      flex-direction: column;
+
+      input{
+        min-width: auto;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .room-dialog h4{
+    margin-top: 16px;
+  }
   .header{
     min-height: auto;
 
@@ -124,8 +140,8 @@
     line-height: 28px;
   }
   p{
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 28px;
   }
   // 
   .info{
@@ -279,6 +295,10 @@
   .floor-select{
     width: 100%;
     margin: 10px auto;
+
+    ul{
+      min-height: 300px;
+    }
   }
   // 
   .column-info, .column-info.reverse{
@@ -836,6 +856,36 @@
     margin-top: 0;
   }
 // 
+// fixes
+// 
+  .house-description .content_ p{
+    line-height: 28px;
+  }
+  .column-info p, .infrastructure .objects .row div, .infrastructure .objects .row div span, .infrastructure p{
+    line-height: 28px;
+  }
+  .col-info-type2 p{
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .lorem p{
+    line-height: 28px;
+  }
+  .f p{
+    line-height: 28px;
+  }
+  .additional-info p, .news-article .comment p, .news-article p a, .room-info .plan span{
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .news .item p{
+    font-size: 16px;
+    line-height: 28px;
+  }
+  span.desc{
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 
 @media screen and (max-width: 540px) {
