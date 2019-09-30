@@ -912,5 +912,7 @@
     max-height: initial;
     // height: initial!important;
     object-fit: initial;
+    display: block;
+    box-sizing: border-box;
   }
 }
