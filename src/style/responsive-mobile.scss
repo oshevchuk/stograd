@@ -911,8 +911,10 @@
   .large-image.h-568{
     max-height: initial;
     // height: initial!important;
-    object-fit: initial;
+    // object-fit: initial;
+    position: relative;
     display: block;
+    height: auto;
     box-sizing: border-box;
   }
 }
